@@ -1,0 +1,15 @@
+<%- include("partials/header") -%> 
+
+    <h1>Home</h1>
+    <p><%=homeStartContent%></p>
+    <%homeContents.forEach(function(homeContent){%>
+        <%console.log(homeContent.title);%>
+        <h1><%=homeContent.title%> </h1>
+        <p><%=homeContent.postDesp.slice(0,100)%>...<a href="/posts/<%=homeContent.title%>">Read More</a></p>
+        
+    <%})%>
+
+
+<%- include("partials/footer") -%> 
+
+<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellendus necessitatibus quaerat dolor rem perspiciatis voluptates dicta cum ipsam similique corrupti deserunt, excepturi veritatis incidunt voluptatem explicabo voluptatum reprehenderit hic maiores unde culpa laborum ullam consectetur distinctio? Quos quaerat, inventore quo at cumque modi suscipit laborum facere aspernatur placeat corrupti quas esse! Perspiciatis odit possimus accusantium necessitatibus expedita nesciunt incidunt magni quod recusandae pariatur aut soluta adipisci ad quasi maxime iste molestiae, sunt explicabo omnis veritatis obcaecati at culpa a dolor! Inventore sed perferendis, natus, praesentium quo ex laboriosam quibusdam ipsam similique minus eum possimus sapiente dolorum aspernatur. Et, facere! -->
